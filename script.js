@@ -5113,8 +5113,7 @@ function renderConsequenceKeypassModal() {
             </h3>
 
             <p>
-                Akses ini hanya merupakan client-side gate.
-                Bukan sistem keamanan absolut.
+                Akses pencatatan konsekuensi ini hanya untuk pengurus.
             </p>
 
 
