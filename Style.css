@@ -1,0 +1,63 @@
+/* =========================================================
+   FIX — HILANGKAN LINGKARAN RADIO BUTTON
+========================================================= */
+
+.radio-option {
+    position: relative;
+    display: inline-flex;
+}
+
+.radio-option input[type="radio"] {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+    opacity: 0 !important;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    pointer-events: none !important;
+}
+
+.radio-option span {
+    position: relative;
+    min-height: 42px;
+    padding: 0 15px !important;
+
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #d9e1ea;
+    border-radius: 12px;
+
+    background: #f1f4f7;
+    color: #52637d;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    cursor: pointer;
+    transition:
+        background-color 180ms ease,
+        border-color 180ms ease,
+        color 180ms ease,
+        transform 180ms ease;
+}
+
+/* Opsi terpilih */
+.radio-option input[type="radio"]:checked + span {
+    background: var(--color-deep-navy) !important;
+    border-color: var(--color-deep-navy) !important;
+    color: #ffffff !important;
+}
+
+/* Efek saat disentuh */
+.radio-option span:active {
+    transform: scale(.97);
+}
